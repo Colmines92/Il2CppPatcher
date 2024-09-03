@@ -28,7 +28,7 @@ namespace IL2CPP_EASY_PATCHER
             this.Text = global.lang.GetStr("about");
             button1.Text = global.lang.GetStr("ok");
             groupBox1.Text = global.lang.GetStr("this_program_uses");
-            label1.Text = Functions.GetTitle();
+            label1.Text = Functions.GetTitle(true);
             label2.AutoSize = true;
             linkLabel1.Text = "Colmines92";
             linkLabel1.Top = label2.Top;
