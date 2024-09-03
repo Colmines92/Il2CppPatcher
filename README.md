@@ -8,24 +8,31 @@
 3. Click on Apply patches.
 
 ## Supported return values ##
-• Integer:                    1, 0x01
+• Integer:                    **1**   |   **0x01**
 
-• Float:                        1f, 1.0, 1.0f
+• Float:                        **1f**   |   **1.0**   |   **1.0f**
 
-• Double:                    1d, 1.0d
+• Double:                    **1d**   |   **1.0d**
 
-• Boolean:                   True, False
+• Boolean:                   **True**   |   **False**
 
-• Byte array:                { 01 00 A0 E3 1E FF 2F E1 }
+• Byte array:                **{ 01 00 A0 E3 1E FF 2F E1 }**
 
-• Nothing:                   null, return
+• Nothing:                   **null**   |   **return**
 
-• ASM:                        mov r0, 0x01; bx lr
+• Custom constants:   **@LicenseType.Valid**
+
+• ASM:                        **mov r0, 0x01; bx lr**   |   **mov r0, @LicenseType.Valid; bx lr**
 
 ## Other features ##
+• Saving and loading patches
+
 • Allow switching between ARM & INTEL assembler
+
 • Define the base address of the file, which will be used by the assembler
-• Define and use constants
+
+• Define and use custom constants
+
 
 ## Defining constants ##
  ![3lebpsg - Imgur](https://github.com/user-attachments/assets/5c669aa0-0ba6-4c73-9e78-1890986e30d9)
