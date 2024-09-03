@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Il2CppPatcher", "Il2CppPatcher\Il2CppPatcher.csproj", "{D72FCD11-15C8-4223-8E66-342D03F9EBCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D72FCD11-15C8-4223-8E66-342D03F9EBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72FCD11-15C8-4223-8E66-342D03F9EBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72FCD11-15C8-4223-8E66-342D03F9EBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72FCD11-15C8-4223-8E66-342D03F9EBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3295BE05-95E1-401E-99CA-73E6C75F49C8}
+	EndGlobalSection
+EndGlobal

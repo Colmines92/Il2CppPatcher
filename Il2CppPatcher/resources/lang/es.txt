@@ -1,0 +1,95 @@
+[name]
+Nombre
+
+[offset]
+Posición
+
+[return_value]
+Valor devuelto
+
+[value]
+Valor
+
+[architecture]
+Arquitectura:
+
+[add_entry]
+Añadir entrada
+
+[remove_entry]
+Quitar entrada
+
+[clear_entries]
+Vaciar entradas
+
+[load_patches]
+Cargar parches...
+
+[save_patches]
+Guardar parches
+
+[save_patches_as]
+Guardar parches como...
+
+[apply_patches]
+Aplicar parches
+
+[file]
+Archivo
+
+[select_executable]
+Seleccionar ejecutable...
+
+[recents]
+Recientes
+
+[clear]
+Vaciar
+
+[exit]
+Salir
+
+[settings]
+Ajustes
+
+[make_backups]
+Crear copias de seguridad
+
+[language]
+Idioma
+
+[define_constants]
+Definir constantes...
+
+[about]
+Acerca de
+
+[define_constants_title]
+Definir constantes
+
+[file_specific]
+Específico del archivo
+
+[base_address]
+Dirección base
+
+[ok]
+Aceptar
+
+[cancel]
+Cancelar
+
+[this_program_uses]
+Este programa usa:
+
+[filter_all_files]
+Todos los archivos
+
+[filter_patch_file]
+Archivo de parches
+
+[missing_files]
+Faltan archivos
+
+[keystone_not_found]
+¡No se encontró keystone.dll!\nAsegúrate de disponer de permisos de escritura en el directorio actual.

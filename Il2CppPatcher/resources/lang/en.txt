@@ -1,0 +1,95 @@
+[name]
+Name
+
+[offset]
+Offset
+
+[return_value]
+Return value
+
+[value]
+Value
+
+[architecture]
+Architecture:
+
+[add_entry]
+Add entry
+
+[remove_entry]
+Remove entry
+
+[clear_entries]
+Clear entries
+
+[load_patches]
+Load patches...
+
+[save_patches]
+Save patches
+
+[save_patches_as]
+Save patches as...
+
+[apply_patches]
+Apply patches
+
+[file]
+File
+
+[select_executable]
+Select executable...
+
+[recents]
+Recents
+
+[clear]
+Clear
+
+[exit]
+Exit
+
+[settings]
+Settings
+
+[make_backups]
+Make backups
+
+[language]
+Language
+
+[define_constants]
+Define constants...
+
+[about]
+About
+
+[define_constants_title]
+Define constants
+
+[file_specific]
+File specific
+
+[base_address]
+Base address
+
+[ok]
+OK
+
+[cancel]
+Cancel
+
+[this_program_uses]
+This program uses:
+
+[filter_all_files]
+All files
+
+[filter_patch_file]
+Patch file
+
+[missing_files]
+Missing files
+
+[keystone_not_found]
+keystone.dll not found!\nMake sure you have write permissions in the current directory.
