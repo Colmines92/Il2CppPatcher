@@ -30,7 +30,7 @@ namespace IL2CPP_EASY_PATCHER
         {
             // File menu
             tsmiFile.Text = global.lang.GetStr("file");
-            tsmiSelectExe.Text = global.lang.GetStr("select_executable");
+            tsmiSelectExe.Text = global.lang.GetStr("select_assembly");
             tsmiRecents.Text = global.lang.GetStr("recents");
             tsmiExit.Text = global.lang.GetStr("exit");
             tsmiClear.Text = global.lang.GetStr("clear");
