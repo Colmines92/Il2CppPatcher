@@ -155,32 +155,39 @@ namespace IL2CPP_EASY_PATCHER
 
             ulong position = 0;
 
-            using (BinaryWriter w = new BinaryWriter(File.Open(global.loadedFile.FileName, FileMode.OpenOrCreate, FileAccess.Write, FileShare.Read)))
+            try
             {
-                foreach (DataGridViewRow row in dataGridView1.Rows)
+                using (BinaryWriter w = new BinaryWriter(File.Open(global.loadedFile.FileName, FileMode.OpenOrCreate, FileAccess.Write, FileShare.Read)))
                 {
-                    if ((bool)row.Cells[0].Value)
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
-                        if (row.Cells[3].Value == null)
-                            continue;
-
-                        Functions.ValidateRow(ref global.keystone, dataGridView1, row.Index);
-
-                        bool validAddress = row.Cells[2].Value != null && row.Cells[2].Value.ToString().Trim() != "";
-                        w.BaseStream.Position = Functions.ParseInt(validAddress ? row.Cells[2].Value.ToString() : "0x" + position.ToString("X"));
-                        byte[] bytes = Functions.HelperBytes(ref global.keystone, row.Cells[3].Value.ToString(), (ulong)w.BaseStream.Position);
-                        position = (ulong)(w.BaseStream.Position + bytes.Length);
-
-                        if (bytes.Length != 0)
+                        if ((bool)row.Cells[0].Value)
                         {
-                            w.Write(bytes);
-                            row.Cells[3].Style.BackColor = Color.PaleGreen;
+                            if (row.Cells[3].Value == null)
+                                continue;
+
+                            Functions.ValidateRow(ref global.keystone, dataGridView1, row.Index);
+
+                            bool validAddress = row.Cells[2].Value != null && row.Cells[2].Value.ToString().Trim() != "";
+                            w.BaseStream.Position = Functions.ParseInt(validAddress ? row.Cells[2].Value.ToString() : "0x" + position.ToString("X"));
+                            byte[] bytes = Functions.HelperBytes(ref global.keystone, row.Cells[3].Value.ToString(), (ulong)w.BaseStream.Position);
+                            position = (ulong)(w.BaseStream.Position + bytes.Length);
+
+                            if (bytes.Length != 0)
+                            {
+                                w.Write(bytes);
+                                row.Cells[3].Style.BackColor = Color.PaleGreen;
+                            }
+                            else
+                                row.Cells[3].Style.BackColor = Color.Salmon;
                         }
-                        else
-                            row.Cells[3].Style.BackColor = Color.Salmon;
                     }
+                    w.Flush();
                 }
-                w.Flush();
+            }
+            catch 
+            {
+                MessageBox.Show(global.lang.GetStr("error"), global.lang.GetStr("could_not_write_to_file"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             btnPatch.Enabled = true;
             patching = false;
