@@ -37,8 +37,8 @@ Aplicar parches
 [file]
 Archivo
 
-[select_executable]
-Seleccionar ejecutable...
+[select_assembly]
+Seleccionar ensamblado...
 
 [recents]
 Recientes

@@ -37,8 +37,8 @@ Apply patches
 [file]
 File
 
-[select_executable]
-Select executable...
+[select_assembly]
+Select assembly...
 
 [recents]
 Recents
