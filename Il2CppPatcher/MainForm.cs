@@ -187,7 +187,7 @@ namespace IL2CPP_EASY_PATCHER
             }
             catch 
             {
-                MessageBox.Show(global.lang.GetStr("error"), global.lang.GetStr("could_not_write_to_file"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(global.lang.GetStr("could_not_write_to_file"), global.lang.GetStr("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             btnPatch.Enabled = true;
             patching = false;
