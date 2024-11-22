@@ -93,3 +93,9 @@ Faltan archivos
 
 [keystone_not_found]
 ¡No se encontró keystone.dll!\nAsegúrate de disponer de permisos de escritura en el directorio actual.
+
+[error]
+Error
+
+[could_not_write_to_file]
+No se pudo escribir al archivo.\nAsegúrese de que no está en uso y que tiene los permisos necesarios.

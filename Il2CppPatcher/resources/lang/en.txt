@@ -93,3 +93,9 @@ Missing files
 
 [keystone_not_found]
 keystone.dll not found!\nMake sure you have write permissions in the current directory.
+
+[error]
+Error
+
+[could_not_write_to_file]
+Could not write to file.\nMake sure it's not in use and that you have necessary rights.
